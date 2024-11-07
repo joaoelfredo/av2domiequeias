@@ -2,6 +2,7 @@ async function buscarEDetalharNave() {
     try {
         const resposta = await fetch("https://swapi.dev/api/starships/9/");
         const nave = await resposta.json();
+        const numTripulacao = 100;
 
         const detalhesNave = `
         Nome: ${nave.name}
@@ -13,7 +14,7 @@ async function buscarEDetalharNave() {
         console.log(detalhesNave);
 
         const tamanhoTripulacao = parseInt(nave.crew);
-        if (tamanhoTripulacao > 100) {
+        if (tamanhoTripulacao > numTripulacao) {
             console.log("Esta é uma nave grande.");
         } else {
             console.log("Esta é uma nave pequena.");
