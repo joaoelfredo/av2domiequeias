@@ -27,19 +27,19 @@ class z {
     }
 }
 
-// Deixe a função clara para que seja possível de compreender que ela verifica o número de usuários com a role de admin
-function t(users) {
-    let c = 0;
+// CORRIGIDO - Deixe a função clara para que seja possível de compreender que ela verifica o número de usuários com a role de admin
+function verificaUserAdmin(users) {
+    let qtdUserAdmin = 0;
     for (let i = 0; i < users.length; i++) {
-        if (users[i].c === "admin") {
-            c++;
+        if (users[i].qtdUserAdmin === "admin") {
+            qtdUserAdmin++;
         }
     }
-    return c;
+    return qtdUserAdmin;
 }
 
 // Deixe a função clara para que seja possível de compreender que ela verifica se o número de tentativas de login é excessivo
-function l(a, b) {
+function tentLogin(a, b) {
     if (a.h > b) {
         console.log("Tentativas de login excessivas.");
     } else {
