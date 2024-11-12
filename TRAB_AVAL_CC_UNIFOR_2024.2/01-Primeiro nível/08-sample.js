@@ -1,7 +1,7 @@
-const individuo = { n: "Maria", i: 28 };
+let pessoa = { nome: "Maria", idade: 28 };
 
-function maior(pessoa) {
-    return pessoa.i >= individuo;
+function verificarMaioridade(pessoa) {
+    return pessoa.idade >= 18;
 }
 
-console.log(maior(individuo));
+console.log(verificarMaioridade(pessoa));

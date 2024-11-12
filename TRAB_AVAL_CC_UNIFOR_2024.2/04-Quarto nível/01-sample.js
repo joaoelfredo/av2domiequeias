@@ -6,4 +6,8 @@ async function buscarPlaneta() {
     exibirNomePlaneta(planeta.name);
 }
 
+function exibirNomePlaneta(nome) {
+    console.log("Nome do planeta:", nome);
+}
+
 buscarPlaneta();

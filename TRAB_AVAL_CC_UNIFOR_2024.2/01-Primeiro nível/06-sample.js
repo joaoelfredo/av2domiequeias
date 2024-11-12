@@ -1,13 +1,13 @@
-const nU = "Pedro";
-const iA = 25;
-const iU = true;
+let nomeUsuario = "Pedro";
+let idadeUsuario = 25;
+let usuarioAtivo = true;
 
-function dU(nU, iA, iU) {
-    if (iU) {
-        console.log(`${nU  } tem ${  iA  } anos e está ativo.`);
+function exibirStatusUsuario(nome, idade, ativo) {
+    if (ativo) {
+        console.log(`${nome} tem ${idade} anos e está ativo.`);
     } else {
-        console.log(`${nU  } está inativo.`);
+        console.log(`${nome} está inativo.`);
     }
 }
 
-dU(nU, iA, iU);
+exibirStatusUsuario(nomeUsuario, idadeUsuario, usuarioAtivo);

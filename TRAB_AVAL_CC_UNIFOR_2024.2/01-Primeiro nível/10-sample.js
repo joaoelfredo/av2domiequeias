@@ -1,10 +1,10 @@
-const usuarioObjeto = {
-    pessoa: "João",
+let usuario = {
+    nome: "João",
     idade: 25
 };
 
-function exibirIdade(o) {
-    console.log(`${o.pessoa  } tem ${  o.idade  } anos.`);
+function exibirInformacoesUsuario(usuario) {
+    console.log(`${usuario.nome} tem ${usuario.idade} anos.`);
 }
 
-exibirIdade(usuarioObjeto);
+exibirInformacoesUsuario(usuario);

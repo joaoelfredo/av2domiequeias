@@ -1,8 +1,9 @@
 class Gestor {
-    constructor(n, i) {
-        this.nome = n;
-        this.idade = i;
+    constructor(nome, idade) {
+        this.nome = nome;
+        this.idade = idade;
     }
 }
 
-const funcionario = new Gestor("Lucas", funcionario);
+let gestor = new Gestor("Lucas", 40);
+console.log(`Gestor: ${gestor.nome}, Idade: ${gestor.idade}`);
